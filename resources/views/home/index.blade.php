@@ -12,6 +12,7 @@
         <article class="card mb-3">
             <div class="card-body">
                 <h4>{{$post->title}}</h4>
+                <h6>{{$post->cat}}</h6>
                 <p>{{Str::limit($post->content, 150, '...')}}</p>
                 <a href="{{route('home.show', $post->id)}}">See Full Post</a>
             </div>
