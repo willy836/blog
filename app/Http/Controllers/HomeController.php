@@ -35,7 +35,8 @@ class HomeController extends Controller
         $validatedData = $request->validate(
             [
                 'title' => 'required | min:3 | max:20',
-                'content' => 'required | min:20'
+                'content' => 'required | min:20',
+                'cat' => 'required'
             ]
         );
 

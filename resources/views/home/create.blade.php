@@ -9,6 +9,9 @@
         <input type="text" name="title" class="form-control" placeholder="Title">
     </div>
     <div class="form-group mb-3">
+        <input type="text" name="cat" class="form-control" placeholder="Category Name">
+    </div>
+    <div class="form-group mb-3">
         <textarea name="content" rows="5" class="form-control" placeholder="Content"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Create Post</button>

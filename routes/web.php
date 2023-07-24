@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,11 @@ Route::get('home/{post}/edit', [HomeController::class, 'edit'])->name('home.edit
 Route::patch('home/{post}', [HomeController::class, 'update'])->name('home.update');
 
 Route::delete('home/{post}', [HomeController::class, 'destroy'])->name('home.destroy');
+
+// CATEGORIES
+Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
+
+Route::get('categories/create', [CategoryController::class, 'create'])->name('categories.create');
+
+Route::post('categories', [CategoryController::class, 'store'])->name('categories.store');
+
