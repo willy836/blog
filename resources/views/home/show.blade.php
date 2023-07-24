@@ -6,8 +6,8 @@
 <article>
     <h4>{{$post->title}}</h4>
     <p>{{$post->content}}</p>
-    <a href="{{route('posts.edit', $post->id)}}" class="btn btn-primary">Edit Post</a>
-    <form action="{{route('posts.destroy', $post->id)}}" method="POST" class="d-inline">
+    <a href="{{route('home.edit', $post->id)}}" class="btn btn-primary">Edit Post</a>
+    <form action="{{route('home.destroy', $post->id)}}" method="POST" class="d-inline">
         @csrf
         @method('DELETE')
         <button type="submit" class="btn btn-danger">Delete Post</button>

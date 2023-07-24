@@ -3,7 +3,7 @@
 @section('content')
 
 <h2 class="text-center my-4">Update Post</h2>
-<form action="{{route('posts.update', $post->id)}}" method="POST">
+<form action="{{route('home.update', $post->id)}}" method="POST">
     @csrf
     @method('PATCH')
     <div class="form-group mb-3">

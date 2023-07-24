@@ -3,7 +3,7 @@
 @section('content')
 
 <h2 class="text-center my-4">Single Post Page</h2>
-<form action="{{route('posts.store')}}" method="POST">
+<form action="{{route('home.store')}}" method="POST">
     @csrf
     <div class="form-group mb-3">
         <input type="text" name="title" class="form-control" placeholder="Title">
